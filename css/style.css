@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #E3F2FD;
+    --container-bg: #fff;
+    --box-shadow-color: rgba(0, 0, 0, 0.3);
+    --overlay-bg: rgba(0, 0, 0, 0.6);
+    --border-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--container-bg);
+    width: 90vh;
+    min-height: 55vh;
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 3px 0 var(--box-shadow-color);
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+form {
+    margin: 2rem 1rem 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+.items, .items img {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    width: 20rem;
+    height: 13rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.lightbox {
+    position: fixed;
+    display: none;
+    background-color: var(--overlay-bg);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+}
+
+.lightbox-content {
+    position: relative;
+    width: 65%;
+    height: 58%;
+    margin: 5% auto;
+}
+
+.lightbox-content img {
+    width: 100%;
+    height: 100%;
+    border: 6px solid var(--border-color);
+    object-fit: cover;
+}
