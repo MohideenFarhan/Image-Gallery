@@ -5,19 +5,17 @@
 }
 
 :root {
-    --background-color: #E3F2FD;
-    --container-bg: #fff;
-    --box-shadow-color: rgba(0, 0, 0, 0.3);
-    --overlay-bg: rgba(0, 0, 0, 0.6);
-    --border-color: #fff;
-    --btn-bg: rgba(0, 0, 0, 0.5);
-    --btn-hover-bg: rgba(255, 255, 255, 0.5);
-    --btn-color: #fff;
-    --btn-hover-color: #000;
+    --light-sky-blue: #E3F2FD;
+    --white: #FFFFFF;
+    --semi-transparent-black: rgba(0, 0, 0, 0.3);
+    --dark-semi-transparent-black: rgba(0, 0, 0, 0.6);
+    --medium-transparent-black: rgba(0, 0, 0, 0.5);
+    --light-transparent-white: rgba(255, 255, 255, 0.5);
+    --black: #000000;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--light-sky-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,17 +23,16 @@ body {
 }
 
 .container {
-    background-color: var(--container-bg);
+    background-color: var(--white);
     width: 80vh;
     height: 80vh;
     padding: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 0.2rem 0 var(--box-shadow-color);
+    box-shadow: 0 0 0.2rem 0 var(--semi-transparent-black);
     overflow: hidden;
 }
-
 
 .slider-container {
     position: relative;
@@ -46,7 +43,6 @@ body {
     justify-content: center;
     overflow: hidden; 
 }
-
 
 .slider-wrapper {
     display: flex;
@@ -71,7 +67,6 @@ body {
     display: flex;
     width: 60%;
     gap: 0.5rem;
-    /* background-color: #fff; */
 }
 
 .gallery-img {
@@ -83,23 +78,19 @@ body {
     transition: 0.3s;
 }
 
-/* .gallery-img:hover {
-    border-color: black;
-} */
-
 .active-img {
     border: 0.188rem solid red; 
     box-shadow: 0 0 0.313rem rgba(255, 0, 0, 0.7);
 }
 
-#gallery-prev,#gallery-next{
-    background: var(--btn-bg);
+#gallery-prev, #gallery-next {
+    background: var(--medium-transparent-black);
     padding: 0.5rem;
     cursor: pointer;
     border-radius: 50%;
     outline: none;
     border: none;
-    color: var(--btn-color);
+    color: var(--white);
     font-size: 1.5rem;
     width: 1.8rem;
     height: 2rem;
@@ -108,7 +99,7 @@ body {
     justify-content: center;
 }
 
-#gallery-prev{
+#gallery-prev {
     margin-right: 0.688rem;
 }
 
@@ -117,13 +108,13 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: var(--btn-bg);
+    background: var(--medium-transparent-black);
     padding: 0.8rem;
     cursor: pointer;
     border-radius: 50%;
     outline: none;
     border: none;
-    color: var(--btn-color);
+    color: var(--white);
     font-size: 1.5rem;
     text-align: center;
     width: 2.5rem;
@@ -134,13 +125,13 @@ body {
 }
 
 .lightbox-prev {
-     left: 0rem;
+    left: 0rem;
 }
 .lightbox-next { 
     right: 0rem;
- }
+}
 
 .lightbox-prev:hover, .lightbox-next:hover {
-    background: var(--btn-hover-bg);
-    color: var(--btn-hover-color);
+    background: var(--light-transparent-white);
+    color: var(--black);
 }
