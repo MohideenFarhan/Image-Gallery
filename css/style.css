@@ -60,6 +60,57 @@ body {
     object-fit: contain;  
 }
 
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#gallery-container {
+    display: flex;
+    width: 60%;
+    gap: 0.5rem;
+    /* background-color: #fff; */
+}
+
+.gallery-img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+/* .gallery-img:hover {
+    border-color: black;
+} */
+
+.active-img {
+    border: 0.188rem solid red; 
+    box-shadow: 0 0 0.313rem rgba(255, 0, 0, 0.7);
+}
+
+#gallery-prev,#gallery-next{
+    background: var(--btn-bg);
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    color: var(--btn-color);
+    font-size: 1.5rem;
+    width: 1.8rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery-prev{
+    margin-right: 0.688rem;
+}
 
 .lightbox-prev,
 .lightbox-next {
